@@ -88,7 +88,7 @@ test.describe('Invalid email format check', () => {
 
 //Weak password error test
 test.describe('invalid signup flow', () => {
-  test.only('should show error for weak password format', async ({ page }) => {
+  test('should show error for weak password format', async ({ page }) => {
     test.setTimeout(60000); 
 
     await page.goto('https://dev.rentangoafrica.com/', {

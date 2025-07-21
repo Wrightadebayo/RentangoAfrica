@@ -1,7 +1,7 @@
 import {test , expect} from '@playwright/test';
 
 test.setTimeout(60000);
-  test.only('Forgot password and navigate to reset password page', async ({ page }) => {
+  test('Forgot password and navigate to reset password page', async ({ page }) => {
   // Go to the homepage
     await page.goto('https://dev.rentangoafrica.com/', {
       waitUntil: 'domcontentloaded',
